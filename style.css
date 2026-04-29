@@ -13,9 +13,9 @@
 
 :root {
     --cor0: #0b0e14;
-    --cor1: #161b22;
-    --cor2: #7928ca;
-    --cor3: #ff0080;
+    --cor1: #161722;
+    --cor2: #b428ca;
+    --cor3: #2200ff;
     --cor4: #f0f6fc;
     --cor5: #ffffff;
     --font0: Arial, Helvetica, sans-serif;
@@ -56,7 +56,7 @@ header .logo {
 
 header .description {
     font-family: var(--font-text);
-    font-size: 1.25em;
+    font-size: 1em;
     margin: auto;
 
     color: rgb(255, 255, 255);
@@ -64,7 +64,7 @@ header .description {
 
     padding: 0px 10px 10px;
     max-width: 700px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .navbar ul {
