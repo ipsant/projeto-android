@@ -14,8 +14,8 @@
 :root {
     --cor0: #0b0e14;
     --cor1: #161722;
-    --cor2: #b428ca;
-    --cor3: #2200ff;
+    --cor2: #28ca66;
+    --cor3: #784c97;
     --cor4: #f0f6fc;
     --cor5: #ffffff;
     --font0: Arial, Helvetica, sans-serif;
@@ -24,9 +24,11 @@
     --font-droid: "Audiowide", sans-serif;
 }
 
-body {
-    background-image: linear-gradient(160deg, var(--cor2), var(--cor3), var(--cor1));
+main {
+    background-image: linear-gradient(160deg, var(--cor0), var(--cor3), var(--cor1));
     font-family: var(--font0);
+
+    padding: 20px;
 }
 
 header {
@@ -64,7 +66,7 @@ header .description {
 
     padding: 0px 10px 10px;
     max-width: 700px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .navbar ul {
@@ -98,12 +100,11 @@ header .description {
 }
 
 article {
-    background-color: white;
+    background-color: hsla(235, 21%, 11%, 0.5);
     padding: 20px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 15px;
+    border: solid 2px var(--cor3);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.299);
-
     margin: auto;
     min-width: 400px;
     max-width: 800px;
@@ -123,7 +124,7 @@ article img.bugdroid-pq {
 }
 
 article h1, article h2 {
-    color: var(--cor1);
+    color: white;
 }
 article h1 {
     font-family: var(--font-droid);
@@ -137,17 +138,18 @@ article h2 {
     font-size: 1.5em;
     background-image: linear-gradient(to right, var(--cor3), transparent);
     padding: 0 7px;
-    border: solid, 2px, var(--cor3);
-    color: white;
+    color: var(--cor5);
 }
 
 article p {
     font-size: 1.1em;
     text-align: justify;
     text-indent: 30px;
+    color: var(--cor5);
+    text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;
 
     line-height: 1.5em;
-    margin: 15px 0;
+    margin: 15px 0; 
 }
 
 article strong {
@@ -188,9 +190,9 @@ div.video iframe {
 }
 
 aside {
-    background-color: var(--cor4);
+    background-color: hsla(220, 29%, 6%, 0.4);
     padding: 15px;
-    border: solid 2px var(--cor3);
+    border: solid 1px var(--cor3);
     border-radius: 10px;
 }
 
@@ -207,6 +209,7 @@ aside ul {
     list-style-position: inside;
     columns: 2;
     font-weight: bolder;
+    color: var(--cor5);
 }
 
 footer {
